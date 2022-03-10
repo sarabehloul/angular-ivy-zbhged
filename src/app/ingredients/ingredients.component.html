@@ -1,0 +1,12 @@
+<div class='container-fluid mt-5'>
+  <div class="card-columns">
+    <div class="card m-2" *ngFor="let meal of meals">
+      <div class="text-center">
+        <img class="card-img-top" style="max-width:300px;" [src]="meal.strMealThumb"  role="button" (click)="onMealClick(meal.strMeal)">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title"  role="button" (click)="onMealClick(meal.strMeal)">{{meal.strMeal}}</h5>
+      </div>
+    </div>
+  </div>
+</div>
